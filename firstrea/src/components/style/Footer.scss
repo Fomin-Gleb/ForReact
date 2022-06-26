@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0;
+  background: rgba($color: #000000, $alpha: 0.1);
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 25%);
+  backdrop-filter: blur(54px);
+  height: 100%;
+  &-content {
+    &_element {
+      margin-bottom: 10px;
+      transition: 0.3s;
+      a {
+        color: #000000;
+        &:hover {
+          color: #9800c7;
+        }
+      }
+    }
+  }
+}
