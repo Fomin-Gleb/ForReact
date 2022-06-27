@@ -22,16 +22,14 @@ const Main = (props) => {
   const miniSliderReset = () => {
     setPage(1);
   }
-  // const [toDo, setToDo] = useState([])
-  // const Remove = (elem) => {
-  //   setToDo = ([...elem].filter(p => p.id !== elem.id))
-  // }
+
   return (
     <section>
       <div className="container">
         <div className="main">
-          {props.arr.map((user) => {
-            if (props.ps === 'Home') {
+          {props.ps === 'Home' ?
+            props.arr.map((user) => {
+
               if (page === user.id) {
                 return (
                   <User
@@ -58,15 +56,8 @@ const Main = (props) => {
                 );
               }
             }
-            if (props.ps === 'toDo') {
-              if (page === user.id) {
-                return (
-                  <ToDoList  />
-                );
-              }
-            }
-          }
-          )
+            ) : props.ps === 'toDo' &&
+            <ToDoList />
           }
         </div>
       </div>
