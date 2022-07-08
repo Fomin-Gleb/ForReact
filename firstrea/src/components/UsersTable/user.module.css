@@ -1,0 +1,10 @@
+.userTableContent {
+  padding: 0 20px;
+  margin-bottom: 50px;
+  overflow-wrap: break-word;
+}
+.function_menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}

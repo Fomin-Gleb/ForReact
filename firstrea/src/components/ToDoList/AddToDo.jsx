@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Button from './Button/Button'
-import Input from './Input/Input'
+import Button from '../Button/Button'
+import Input from '../Input/Input'
 
-const AddToDo = ({ setToDo, toDo, setIsVisible}) => {
+const AddToDo = ({ setToDo, toDo, setIsVisible }) => {
     // e.preventDefault(); 
     const [userName, setUserName] = useState('')
     const [userNikName, setUserNikName] = useState('')
@@ -35,13 +35,13 @@ const AddToDo = ({ setToDo, toDo, setIsVisible}) => {
     return (
         <div className="main-content">
             {/* <form action="#"> */}
-                <div className="main-content_element"><p>Name: </p><p><Input type="text" value={userName} onChange={onChangeName} /></p> </div>
-                <div className="main-content_element"><p>Username: </p><p><Input type="text" value={userNikName} onChange={onChangeNikName} /></p></div>
-                <div className="main-content_element"><p>Email: </p><p><Input type="text" value={userEmail} onChange={onChangeEmail} /></p></div>
+            <div className="main-content_element"><p>Name: </p><p><Input type="text" value={userName} onChange={onChangeName} /></p> </div>
+            <div className="main-content_element"><p>Username: </p><p><Input type="text" value={userNikName} onChange={onChangeNikName} /></p></div>
+            <div className="main-content_element"><p>Email: </p><p><Input type="text" value={userEmail} onChange={onChangeEmail} /></p></div>
 
-                <div className="main-content_btn">
-                    <Button onClick={addNewUser}>Add User</Button>
-                </div>
+            <div className="main-content_btn">
+                <Button onClick={addNewUser}>Add User</Button>
+            </div>
             {/* </form> */}
         </div>
     );

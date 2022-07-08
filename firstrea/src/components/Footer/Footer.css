@@ -1,0 +1,28 @@
+.footer {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 150px 0;
+}
+.footer-content_element {
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-content_element a {
+  color: #000000;
+}
+.footer-content_element a:hover {
+  color: #9800c7;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(54px);
+          backdrop-filter: blur(54px);
+}

@@ -1,0 +1,19 @@
+.usersTable_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersTable_head div {
+  width: 25%;
+  overflow-wrap: break-word;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.usersTable_head div:hover {
+  cursor: pointer;
+}
+
+.usersTable_head div:first-child {
+  width: 30px;
+}

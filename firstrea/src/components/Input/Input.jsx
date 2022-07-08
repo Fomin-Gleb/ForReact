@@ -1,9 +1,9 @@
 import styles from './styles.module.css'
 
 
-const Input = ({...props}) => {
+const Input = ({ ...props }) => {
     return (
-        <input className={styles.inp} {...props}/>
+        <input className={styles.inp} {...props} />
     )
 }
 

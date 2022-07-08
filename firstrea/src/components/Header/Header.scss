@@ -1,20 +1,31 @@
 nav {
+  width: 100%;
   display: flex;
   padding: 10px;
   justify-content: end;
   margin-bottom: 30px;
+  overflow-wrap: break-word;
+
   .logo {
+    overflow-wrap: break-word;
+
     h2 {
       font-size: 25px;
       font-weight: 700;
       color: #000000;
+    overflow-wrap: break-word;
+
     }
     flex-grow: 1;
   }
   .nav_element {
     padding: 20px 5px;
     align-items: center;
+    overflow-wrap: break-word;
+
     a {
+    overflow-wrap: break-word;
+
       font-size: 18px;
       color: #1f1534;
       opacity: 0.7;

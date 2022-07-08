@@ -1,8 +1,10 @@
 import { useState } from "react";
-import Button from './Button/Button'
-import Modal from "./Modal/Modal";
+import Button from '../Button/Button'
+import Modal from "../Modal/Modal";
 import AddToDo from "./AddToDo";
-import Select from "./Select/Select";
+import Select from "../Select/Select";
+import Input from "../Input/Input";
+import { useMemo } from "react";
 
 const ToDoList = () => {
     const [toDo, setToDo] = useState([])
@@ -36,7 +38,7 @@ const ToDoList = () => {
         },
         {
             id: "2",
-            name: "Ilua",
+            name: "Ilya",
             username: "HSK",
             email: "Dileyko@gmail.com"
         },
@@ -60,6 +62,11 @@ const ToDoList = () => {
         }]
         )
     }
+    const [searchValue, setSearchValue] = useState('')
+    const search = useMemo(() => {
+        const newPost = [...toDo].filter(user => user.name.toLowerCase().includes(searchValue))
+        return newPost;
+    }, [searchValue, toDo])
     return (
         <div className="main-content">
 
@@ -85,13 +92,16 @@ const ToDoList = () => {
                     { value: 'username', name: 'По Никнейму' },
                     { value: 'email', name: 'По Почте' }
                 ]}
-                    value={sort}
+                    value={() => { }}
                     onChange={setSort}
                 />
             </div>
+            <div className="main-content_search">
+                <Input value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
+            </div>
 
             {toDo.length ?
-                toDo.map((user) => {
+                search.map((user) => {
                     return (
                         <div className="main-content_element">
                             Name: {user.name} | Username: {user.username} | Email: {user.email} <a onClick={() => Remove(user)}>Delete</a>

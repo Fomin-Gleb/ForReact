@@ -1,0 +1,15 @@
+.userTableList {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.elem {
+  width: 25%;
+  overflow-wrap: break-word;
+  padding: 5px;
+  border: 1px solid black;
+}
+.elem:first-child {
+  width: 30px;
+}
