@@ -1,11 +1,13 @@
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import Button from '../../Button/Button'
 import Input from "../../Input/Input"
+// import { useParams } from "react-router-dom";
+
 // import styles from "./addUser.module.css"
 
 
-const Resett = ({ setUser, setIsVis, name, username, email, street, ...props }) => {
-
+const UserInfo = ({ name, username, email, street, ...props }) => {
 
 
     return (
@@ -17,12 +19,11 @@ const Resett = ({ setUser, setIsVis, name, username, email, street, ...props }) 
             <div className="main-content_element"><p>Address: </p><p><Input type="text" value={street} /></p></div>
 
             <div className="main-content_btn">
-                <Button onClick={() => { setIsVis() }}>Close</Button>
-
+                <Link to="/users"> <button>Back</button> </Link>
             </div>
             {/* </form> */}
         </div>
     );
 };
 
-export default Resett;
+export default UserInfo;

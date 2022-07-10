@@ -1,36 +1,28 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Main from "./components/Main";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import React, { useEffect, useState } from "react";
+// import Main from "./components/Main";
+// import Footer from "./components/Footer/Footer";
+// import Header from "./components/Header/Header";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Users from "./pages/users/users";
+import Home from "./pages/home/home";
+import NotFound from "./pages/NotFound/notFound";
+import Layout from "./components/layout";
+import User from "./pages/users/user/user";
+import UserInfo from "./components/UsersTable/userInfo/userInfo";
 
 function App() {
-  // const [users, setUsers] = useState([]);
-
-  // const loadUsers = async () => {
-  //   const resp = await axios.get("https://jsonplaceholder.typicode.com/users");
-  //   setUsers(resp.data);
-  // };
-
-  // useEffect(() => {
-  //   loadUsers();
-  // }, []);
-
-  // const [pageStatus, setPageStatus] = useState("Home");
-
-  // const pageNewUser = () => {
-  //   setPageStatus("toDo");
-  // };
-  // const pageHome = () => {
-  //   setPageStatus("Home");
-  // };
-
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="users" element={<Users />} />
+          <Route path="users/:id/:name" element={<User />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

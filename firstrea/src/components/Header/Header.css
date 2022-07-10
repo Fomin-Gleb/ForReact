@@ -45,3 +45,8 @@ nav .nav_element a:hover {
   color: #4f0f63;
   background-color: rgba(172, 65, 204, 0.3);
 }
+
+.active {
+  color: #4f0f63;
+  background-color: rgba(172, 65, 204, 0.3);
+}

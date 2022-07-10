@@ -13,8 +13,7 @@ nav {
       font-size: 25px;
       font-weight: 700;
       color: #000000;
-    overflow-wrap: break-word;
-
+      overflow-wrap: break-word;
     }
     flex-grow: 1;
   }
@@ -24,7 +23,7 @@ nav {
     overflow-wrap: break-word;
 
     a {
-    overflow-wrap: break-word;
+      overflow-wrap: break-word;
 
       font-size: 18px;
       color: #1f1534;
@@ -40,4 +39,9 @@ nav {
       }
     }
   }
+}
+
+.active {
+  color: #4f0f63;
+  background-color: rgba($color: #ac41cc, $alpha: 0.3);
 }
