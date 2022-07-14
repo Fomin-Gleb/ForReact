@@ -1,12 +1,12 @@
-import Button from "../Button/Button"
-import Modal from "../Modal/Modal"
+import Button from "../../UI/Button/Button"
+import Modal from "../../UI/Modal/Modal"
 import TableList from "./userTableList/UserTableList"
 import TableHead from "./tableHead/tableHead"
 import TableSearch from "./search/search"
 import AddUser from "./addUser/addUser"
 import styles from "./user.module.css"
 import { useMemo, useState } from "react";
-// import Resett from "./userInfo/resetUser"
+
 
 const UsersTable = (props) => {
 
@@ -35,6 +35,7 @@ const UsersTable = (props) => {
         setSearchValue('')
     }
 
+
     return (
         <div className={styles.userTableContent}>
 
@@ -60,10 +61,6 @@ const UsersTable = (props) => {
                 {
                     Sorted.map((user) => (
                         <TableList
-                            // setVisible={setVisibleTwo}
-                            // setVisiblet={isVisibleTwo}
-                            // setIsVisible={setIsVisible}
-
                             user={user}
                             key={user.id}
                             keys={user.id}
@@ -72,8 +69,6 @@ const UsersTable = (props) => {
                             email={user.email}
                             street={user.address.street}
                         />
-
-
                     )
                     )
                 }

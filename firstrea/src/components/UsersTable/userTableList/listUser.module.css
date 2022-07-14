@@ -4,8 +4,7 @@
   cursor: pointer;
 }
 .userTableList:hover {
-  color: #4f0f63;
-  background-color: rgba(172, 65, 204, 0.3);
+  background-color: rgba(170, 170, 170, 0.3);
 }
 
 .elem {
@@ -17,6 +16,6 @@
 .elem:first-child {
   width: 30px;
 }
-a{
+a {
   color: black;
 }

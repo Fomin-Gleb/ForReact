@@ -1,5 +1,5 @@
 import styles from './search.module.css'
-import Input from '../../Input/Input'
+import Input from '../../../UI/Input/Input'
 // import { useMemo, useState } from 'react'
 
 const TableSearch = ({ setSearchValue, searchValue, ...props }) => {

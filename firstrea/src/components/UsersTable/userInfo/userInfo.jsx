@@ -1,15 +1,8 @@
-import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import Button from '../../Button/Button'
-import Input from "../../Input/Input"
-// import { useParams } from "react-router-dom";
-
-// import styles from "./addUser.module.css"
-
+import { Link } from "react-router-dom";
+// import Button from '../../../UI/Button/Button'
+import Input from "../../../UI/Input/Input"
 
 const UserInfo = ({ name, username, email, street, ...props }) => {
-
-
     return (
         <div className="main-content">
             {/* <form action="#"> */}

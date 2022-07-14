@@ -10,8 +10,7 @@
   border: 1px solid black;
 }
 .usersTable_head div:hover {
-  color: #4f0f63;
-  background-color: rgba(172, 65, 204, 0.3);
+  background-color: rgba(170, 170, 170, 0.3);
 }
 
 .usersTable_head div:hover {

@@ -1,15 +1,10 @@
-// import Button from "../Button/Button"
 import styles from "./listUser.module.css"
-// import Reset from "../userInfo/resetUser";
-// import UserInfo from "../userInfo/userInfo";
-// import Modal from "../../Modal/Modal";
-// import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TableList = (props) => {
-   
+
     return (
-        <Link  to={`${props.keys}/${props.name}`}>
+        <Link to={`${props.keys}/${props.name}`}>
             <div className={styles.userTableList}>
                 <div className={styles.elem}>{props.keys}</div>
                 <div className={styles.elem}>{props.name}</div>

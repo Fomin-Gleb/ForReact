@@ -1,0 +1,7 @@
+.team {
+  display: flex;
+  justify-content: space-around;
+}
+.teamElement {
+    margin-bottom: 5px;
+}

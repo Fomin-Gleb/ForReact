@@ -12,9 +12,6 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.footer-content_element a {
-  color: #000000;
-}
 .footer-content_element a:hover {
   color: #9800c7;
 }
